@@ -16,7 +16,7 @@ export default function renderHomePage() {
 
 
     const homePageImg = document.createElement('img');
-    homePageImg.src = '../assets/home-main-img.jpg';
+    homePageImg.src = './assets/home-main-img.jpg';
     mainbox.appendChild(homePageImg);
 
     const p3 = mainbox.appendChild(document.createElement('p'));

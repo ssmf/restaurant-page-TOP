@@ -15,7 +15,7 @@ export default function renderMenuPage() {
         menuGrid.appendChild(menuCard);
     
         const cardImg = document.createElement('img');
-        cardImg.src = '../assets/home-main-img.jpg';
+        cardImg.src = './assets/home-main-img.jpg';
         menuCard.appendChild(cardImg);
     
         const cardHeading = document.createElement('h2');
