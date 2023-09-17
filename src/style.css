@@ -1,0 +1,117 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.mainSection, .mainBox, .tabWrapper, .menuCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: block;
+}
+
+.mainSection {
+    width: 100vw;
+    min-height: 80vh;
+    text-align: center;
+    background-image: url('../assets/background-img.jpg');
+    background-blend-mode: darken;
+    box-shadow: 0px 0px 50px -10px green;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.mainBox {
+    font-size: 30px;
+    border: 2px solid black;
+    color: black;
+    padding: 50px;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tabWrapper {
+    height: 20%;
+    width: 100%;
+    gap: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.tabBtn {
+    transition: all .1s ease-in-out;
+    font-size: 24px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px 0px black;
+}
+
+.tabBtn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.menuGrid {
+    box-sizing: border-box;
+    height: 95%;
+    width: 95%;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: .7fr;
+    gap: 30px;
+    overflow: auto;
+    align-content: center;
+
+}
+
+.menuCard {
+    border-radius: 15px;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.menuCard > img {
+    width: 90%;
+}
+
+a {
+    transition: all .1 ease-in-out;
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: white;
+}
+
+a:visited {
+    color: black;
+}
